@@ -1,0 +1,44 @@
+{
+    "name": "test-netmask-karma-jasmine",
+    "version": "0.0.1",
+    "description": "Check IP address within a subnet mask range",
+    "author": "Debadatta Mishra",
+    "main": "lib/Test.js",
+    "types": "lib/index.d.ts",
+    "license": "UNLICENSED",
+    "scripts": {
+        "build": "rimraf lib && tsc",
+        "test": "karma start",
+        "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+        "lint": "tslint -p tsconfig.json",
+        "prepublishOnly": "npm test && npm run lint",
+        "preversion": "npm run lint",
+        "version": "npm run format && git add -A src",
+        "postversion": "git push && git push --tags",
+        "start": "node ./lib/Test.js"
+    },
+    "dependencies": {
+        "dtslint": "^3.3.0",
+        "netmask": "^1.0.6",
+        "@types/netmask": "^1.0.30",
+        "@types/node": "^13.7.7"
+    },
+    "devDependencies": {
+        "codecov": "^3.1.0",
+        "prettier": "^1.13.2",
+        "tslint": "^5.10.0",
+        "tslint-config-prettier": "^1.13.0",
+        "typescript": "^3.8.3",
+        "rimraf": "^3.0.2",
+        "@types/jasmine": "^3.4.0",
+        "jasmine-core": "^3.4.0",
+        "karma": "^4.3.0",
+        "karma-chrome-launcher": "^3.1.0",
+        "karma-cli": "^2.0.0",
+        "karma-jasmine": "^2.0.1",
+        "karma-typescript": "latest"
+    },
+    "files": [
+        "lib/**/*"
+    ]
+}
