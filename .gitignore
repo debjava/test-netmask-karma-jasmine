@@ -14,22 +14,14 @@
 /out
 
 /out/*.*
-nvt-commons/out
-nvt-resources/out
-nvt-services/out
-nvt-services/logs
-nvt-utils/out
-nvt-validations/out
+
 
 # Eclipse
 # -------
 *.classpath
 *.project
 *.settings
-nvt-commons/bin
-nvt-resources/bin
-nvt-utils/bin
-nvt-validations/bin
+
 /bin
 .metadata/
 bin/
@@ -68,6 +60,8 @@ local.properties
 build
 .gradle/
 build/
+node_modules/
+lib/
 **/*.jar
 
 # Maven specific

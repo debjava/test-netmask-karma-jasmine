@@ -12,6 +12,12 @@ Use the following command to test.
 
 `yarn install && yarn build && yarn test`
 
+If you want to simply test with some data, I have provided as `Test.ts` file where you can enter the data.
+You can use the following commmand to run.
+
+`yarn install && yarn build && yarn start`
+
+
 # Technicalities
 Refer to the class `ip-utility.ts`. Exported class name is `IPUtility`
 
@@ -29,15 +35,17 @@ The above method provides an array of IP addresses for a range with initial IP a
 # Comments
 Since I am using Karma Jasmin for test framework, you can refer to the class `test-utility.spec.ts` for various test cases.
 
-# Do not
-
-Do not run this command `yarn start` as I did not provide direct run rather I have provided unit test cases with code coverage.
-
 # Author
 Debadatta Mishra (deba.java@gmail.com)
 
 # References
 Check the links for subnet calculation online.
+
+* [List of Global Subnet mask](https://docs.netgate.com/pfsense/en/latest/book/network/understanding-cidr-subnet-mask-notation.html)
+
+* [List of subnet as per wikipedia](https://en.wikipedia.org/wiki/Wildcard_mask)
+
+* [Subnet mask cheat sheet](http://droptips.com/cidr-subnet-masks-and-usable-ip-addresses-quick-reference-guide-cheat-sheet)
 
 * [IP Calculator](http://jodies.de/ipcalc)
 
